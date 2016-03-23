@@ -10,6 +10,7 @@
 		9935F5131BF9EBBF001DB8B6 /* UIKitUtilsSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 9935F5121BF9EBBF001DB8B6 /* UIKitUtilsSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9935F51A1BF9EBBF001DB8B6 /* UIKitUtilsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9935F50F1BF9EBBF001DB8B6 /* UIKitUtilsSwift.framework */; };
 		9935F51F1BF9EBBF001DB8B6 /* UIKitUtilsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9935F51E1BF9EBBF001DB8B6 /* UIKitUtilsSwiftTests.swift */; };
+		9935F52A1BF9EC89001DB8B6 /* UIKit+Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9935F5291BF9EC89001DB8B6 /* UIKit+Drawing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		9935F5191BF9EBBF001DB8B6 /* UIKitUtilsSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitUtilsSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9935F51E1BF9EBBF001DB8B6 /* UIKitUtilsSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitUtilsSwiftTests.swift; sourceTree = "<group>"; };
 		9935F5201BF9EBBF001DB8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9935F5291BF9EC89001DB8B6 /* UIKit+Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIKit+Drawing.swift"; path = "Drawing/UIKit+Drawing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				9935F5121BF9EBBF001DB8B6 /* UIKitUtilsSwift.h */,
 				9935F5141BF9EBBF001DB8B6 /* Info.plist */,
+				9935F5291BF9EC89001DB8B6 /* UIKit+Drawing.swift */,
 			);
 			path = UIKitUtilsSwift;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9935F52A1BF9EC89001DB8B6 /* UIKit+Drawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,7 @@
 		9935F5241BF9EBBF001DB8B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = it.3Bus.UIKitUtilsSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9935F5251BF9EBBF001DB8B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
